@@ -3,6 +3,7 @@ import user from './patch/to/user.json';
 import Statistics from './components/statistics/Statistics';
 import data from './patch/to/data.json';
 
+
 export default function App() {
   return (
     <div>
