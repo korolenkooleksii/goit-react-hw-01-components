@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import css from './'
 
 export default function StatisticElement({ elem: { label, percentage } }) {
   return (
