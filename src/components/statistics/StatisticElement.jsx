@@ -1,16 +1,11 @@
-import PropTypes from 'prop-types';
-import css from './'
+import css from './Statistics.module.css';
 
-export default function StatisticElement({ elem: { label, percentage } }) {
+export default function StatisticElement({ label, percentage } ) {
   return (
     <>
-      <span className="label">{label}</span>
-      <span className="percentage">{percentage}</span>
+      <span className={css.label }>{label}</span>
+      <span className={css.percentage}>{percentage}</span>
     </>
   );
 }
 
-StatisticElement.protTypes = {
-  label: PropTypes.string.isRequired,
-  percentage: PropTypes.number.isRequired,
-};

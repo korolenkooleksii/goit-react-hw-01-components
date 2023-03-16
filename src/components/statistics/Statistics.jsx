@@ -1,12 +1,10 @@
 import PropTypes from 'prop-types';
-import './Statistics.css';
 import StatisticsList from './StatisticsList';
-
+import css from './Statistics.module.css';
 export default function Statistics({ title, stats }) {
   return (
-    <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
-
+    <section className={css.statistics}>
+      {title && <h2 className={css.title}>{title}</h2>}
       <StatisticsList stats={stats} />
     </section>
   );
@@ -14,5 +12,4 @@ export default function Statistics({ title, stats }) {
 
 Statistics.propTypes = {
   title: PropTypes.string,
-  stats: PropTypes.array.isRequired,
 };

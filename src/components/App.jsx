@@ -1,8 +1,7 @@
-import Profile from './components/profile/Profile';
-import user from './patch/to/user.json';
-import Statistics from './components/statistics/Statistics';
-import data from './patch/to/data.json';
-
+import Profile from './profile/Profile';
+import user from '../patch/to/user.json';
+import Statistics from './statistics/Statistics';
+import data from '../patch/to/data.json';
 
 export default function App() {
   return (
@@ -13,9 +12,7 @@ export default function App() {
         tag={user.tag}
         location={user.location}
         foto={user.avatar}
-        followers={user.stats.followers}
-        views={user.stats.views}
-        likes={user.stats.likes}
+        stats={user.stats}
       />
       <h2>Statistics</h2>
       <Statistics title="Upload stats" stats={data} />
