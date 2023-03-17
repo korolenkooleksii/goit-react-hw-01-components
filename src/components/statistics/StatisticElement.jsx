@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
 import getRandomHexColor from 'utils/getRandomColor';
 
@@ -9,3 +10,8 @@ export default function StatisticElement({ label, percentage }) {
     </li>
   );
 }
+
+StatisticElement.propTypes = {
+  label: PropTypes.string.isRequired,
+  percentage: PropTypes.number.isRequired,
+};

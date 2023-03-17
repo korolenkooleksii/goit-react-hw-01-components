@@ -27,7 +27,7 @@ export default function TransactionHistory({ items }) {
   );
 }
 
-TransactionElement.propTypes = {
+TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.exact({
       id: PropTypes.string.isRequired,
@@ -35,5 +35,5 @@ TransactionElement.propTypes = {
       amount: PropTypes.string.isRequired,
       currency: PropTypes.string.isRequired,
     })
-  ),
+  ).isRequired,
 };
