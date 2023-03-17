@@ -1,8 +1,8 @@
-import Profile from './profile/Profile';
+import Profile from './Profile/Profile';
 import user from '../patch/to/user.json';
-import Statistics from './statistics/Statistics';
+import Statistics from './Statistics/Statistics';
 import data from '../patch/to/data.json';
-import FriendList from './friends/FriendsList'
+import FriendList from './Friends/FriendsList'
 import friends from '../patch/to/friends.json';
 import TransactionHistory from './TransactionHistory/TransactionHistory';
 import transactions from '../patch/to/transactions.json';
@@ -22,9 +22,9 @@ export default function App() {
       <h2>Statistics</h2>
       <Statistics title="Upload stats" stats={data} />
       <h2>FriendList</h2>
-      <FriendList friends={friends} />;
+      <FriendList friends={friends} />
       <h2>TransactionHistory</h2>
-      <TransactionHistory items={transactions} />;
+      <TransactionHistory items={transactions} />
     </div>
   );
 }
