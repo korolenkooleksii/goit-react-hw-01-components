@@ -38,10 +38,10 @@ export default function Profile(props) {
 }
 
 Profile.propTypes = {
-  username: PropTypes.string.isRequired,
+  username: PropTypes.string,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  foto: PropTypes.string.isRequired,
+  foto: PropTypes.string,
   stats: PropTypes.shape({
     followers: PropTypes.number.isRequired,
     views: PropTypes.number.isRequired,

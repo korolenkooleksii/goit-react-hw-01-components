@@ -4,7 +4,7 @@ import getRandomHexColor from 'utils/getRandomColor';
 import css from './Statistics.module.css';
 export default function StatisticsList({ stats }) {
   return (
-    <ul className={css.stat_list}>
+    <ul className={css['stat-list']}>
       {stats.map(({ id, label, percentage }) => (
         <li
           key={id}

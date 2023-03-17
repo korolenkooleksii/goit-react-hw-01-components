@@ -16,7 +16,7 @@
   color: rgb(103, 101, 101);
 }
 
-.stat_list {
+.stat-list {
   display: flex;
   justify-content: center;
   color: #ffffff;
