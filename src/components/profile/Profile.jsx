@@ -1,14 +1,12 @@
 import PropTypes from 'prop-types';
 import defaultimage from '../defaultimage.jpg';
 import css from './Profile.module.css';
-export default function Profile(props) {
-  const {
-    username = 'no name',
-    tag,
-    location,
-    foto = defaultimage,
-    stats: { followers, views, likes },
-  } = props;
+
+export default function Profile({ username = 'no name',
+  tag,
+  location,
+  foto = defaultimage,
+  stats: { followers, views, likes } }) {
 
   return (
     <div className={css.profile}>
